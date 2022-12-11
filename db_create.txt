@@ -1,0 +1,17 @@
+CREATE TABLE Users (
+id BIGINT AUTO_INCREMENT,
+name varchar(60),
+email varchar(60),
+cpf varchar(60),
+password varchar(256),
+wallet int,
+is_shopkeeper tinyint(1),
+PRIMARY KEY (id),
+CONSTRAINT unique_data UNIQUE (cpf, email)
+);
+
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+INSERT INTO Users (name, email, cpf, password, wallet, is_shopkeeper) VALUES ("Torres", "bla@bla.com", "12345678900", "123456", 0, 0);
+
+
+123456
